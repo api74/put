@@ -1,4 +1,12 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Миллион в сетевом: партнёрам</title>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Путь приглашённого</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Путь приглашённого · HASH AI">
+<meta property="og:description" content="Памятка партнёра: как вести приглашённого от первого сообщения до активации, со скриптами.">
+<meta property="og:image" content="https://api74.github.io/put/hero.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
@@ -77,186 +85,84 @@ h1{margin:0;font-family:var(--display);font-weight:700;font-size:clamp(30px,5.4v
   .stop{gap:14px}.dot{width:42px;height:42px;font-size:16px}.stop:not(:last-child)::before{left:20px;top:46px}
   .msg-h{flex-wrap:wrap}
 }
+mark{background:#5a4a12;color:#FFE9A8;border-radius:4px;padding:0 3px}
+.msg pre{max-height:420px;overflow:auto}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(4,32,26,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--bg)}
+.nav .wrap{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;padding-block:12px}
+@media (max-width:700px){.nav{position:static}.sec{scroll-margin-top:16px!important}.nav .wrap{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding-block:8px}.nav a{font-size:13px!important;padding:6px 8px!important;min-height:36px!important}}
+.nav a{min-width:0;justify-content:center;text-align:center;min-height:42px;display:inline-flex;align-items:center;padding:8px 10px;border-radius:999px;border:1.5px solid var(--gold);color:var(--gold-soft);font-weight:700;font-size:15px;text-decoration:none;white-space:normal;line-height:1.15}
+.nav a:hover,.nav a:focus-visible{background:var(--gold);color:var(--ink);outline:none}
+.sec{scroll-margin-top:130px;padding-block:44px 14px;border-top:1px solid var(--line)}
+.sec>.wrap>h2{margin:0 0 6px;font-family:var(--display);font-size:clamp(23px,3.3vw,32px)}
+.sec>.wrap>p.d{margin:0 0 22px;color:var(--muted)}
+.sub-h{margin:24px 0 4px;font-family:var(--display);font-size:18px;color:var(--gold-soft)}
+.tip{margin-top:14px;background:var(--band);border-left:3px solid var(--gold);border-radius:12px;padding:12px 16px;color:var(--muted)}.tip b{color:var(--fg)}
+.box{background:var(--card);border:1px solid var(--card-line);border-radius:16px;padding:16px 20px;color:var(--muted)}
+.box ul,.box ol{margin:6px 0 0;padding-left:20px}.box li+li{margin-top:4px}.box b{color:var(--fg)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px}
+.dates{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px;margin-top:26px}
+.dates div{background:var(--gold-bg);border:1.5px solid var(--gold);border-radius:18px;padding:16px 18px}
+.dates b{display:block;font-family:var(--display);color:var(--gold-soft);font-size:18px}.dates span{color:var(--muted);font-size:15px}
+.stop a,.box a,.tip a{color:var(--gold-soft)}
+.flow{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.flow span{background:var(--card);border:1px solid var(--card-line);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:700;color:var(--fg-2,#D4DAE8)}
+.flow i{font-style:normal;color:var(--gold);align-self:center}
 </style></head><body>
+<div class="wrap brand">HASH AI · Система «Масштаб»</div>
+<section class="hero"><div class="wrap"><p class="eyebrow">Памятка партнёра</p>
+<h1>Путь приглашённого: от&nbsp;первого сообщения до&nbsp;активации</h1>
+<p class="sub">Кому что писать на&nbsp;каждом этапе. Все сообщения копируются кнопкой, подсвеченное <mark>[в&nbsp;скобках]</mark> меняешь на&nbsp;своё. Вместо <mark>[день]</mark> вписывай ближайшую дату события.</p>
+<div class="flow"><span>Сообщение</span><i>→</i><span>Нейроэкскурсия</span><i>→</i><span>Регистрация</span><i>→</i><span>Тест-драйв</span><i>→</i><span>Оплата</span><i>→</i><span>Новый партнёр</span></div>
+<div class="dates"><div><b>Вт и чт, 14:00</b><span>Нейроэкскурсия, МСК</span></div><div><b>Ср и пт, 14:00</b><span>Тест-драйв платформы, МСК</span></div><div><b>Пн–пт, 10:00–11:00</b><span>Практика с командой: приходи с возражениями</span></div></div>
+</div></section>
+<nav class="nav" aria-label="Разделы"><div class="wrap"><a href="#start">Старт</a><a href="#priglashenie">1. Приглашение</a><a href="#vo-vremya">2. На экскурсии</a><a href="#posle">3. После</a><a href="#test-drajv">4. Тест-драйв</a><a href="#molchit">5. Молчит</a><a href="#oplata">6. Оплата</a><a href="#instrukciya">7. Инструкция</a><a href="#pochemu">Аргументы</a><a href="#pomoshch">Помощь</a></div></nav>
+<section class="sec" id="start"><div class="wrap"><h2>Твой старт</h2><p class="d">Перед тем как звать людей, зафиксируй цель и ритм. Это займёт 10 минут.</p><div class="grid2"><div class="box"><b>Ответь себе на 3 вопроса</b><ol><li>Сколько денег нужно в ближайшие 90 дней и на какие цели?</li><li>Какой первый результат хочу за 14 дней?</li><li>Сколько времени в день выделяю на действия? Сразу поставь в расписание.</li></ol></div><div class="box"><b>План-минимум с первого дня</b><ul><li>10 новых личных контактов в день с теми, кому нужны клиенты или партнёры</li><li>С Лидорубом: ориентир 50 контактов в день, и отвечать на диалоги</li><li><b>Практика пн–пт с 10:00 до 11:00 МСК.</b> Будь там каждый день и приноси свои возражения и переписки</li></ul></div></div><p class="sub-h">Проверь, что ты в каналах</p><div class="box"><ul style="margin:0"><li><a href="https://t.me/+Ch9AaVq0tvwxZDY6" target="_blank" rel="noopener">«Нейрокоманда, которая приводит клиентов»</a>: сюда ты лично приглашаешь своих людей</li><li><a href="https://t.me/+CmqW7iSf-dplYjYy" target="_blank" rel="noopener">«Система Масштаб»</a>: быстрый старт для партнёров HASH AI</li></ul><p style="margin:8px 0 0">Если ещё не там, добавься.</p></div><p class="sub-h">Получи личную ссылку для приглашений</p><p>Чтобы приглашать в канал нейроэкскурсий своих людей, нужна твоя личная пригласительная ссылка. Скопируй сообщение и отправь Анне <a href="https://t.me/nastavnikpozitiv" target="_blank" rel="noopener">@nastavnikpozitiv</a>.</p><div class="msg"><div class="msg-h"><span>Отправь Анне</span><button class="copy" type="button">Скопировать</button></div><pre>Аня, привет! Нужна ссылка на нейроэкскурсию</pre></div><p style="margin:8px 0 0;color:var(--muted)">Отправь сообщение как есть: в ответ придёт твоя ссылка.</p><a href="https://t.me/nastavnikpozitiv" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-top:12px;min-height:48px;padding:12px 22px;border-radius:14px;background:#2AABEE;color:#fff;font-weight:700;text-decoration:none">Написать Анне в Telegram →</a><p style="margin:8px 0 0;font-size:15px;color:var(--muted)">Ссылка: https://t.me/nastavnikpozitiv</p><p class="sub-h">Отправь свою цель активному куратору</p><p>Куратор: человек, который пригласил тебя на платформу. Если он сейчас не на связи, отправь тому, кто выше и активно строит команду.</p><div class="msg"><div class="msg-h"><span>Отправь своему активному куратору</span><button class="copy" type="button">Скопировать</button></div><pre>Моя цель на ближайший месяц: <mark>[сумма и задачи, которые хочу решить]</mark>.
 
-<div class="wrap brand">HASH AI · Миллион долларов в сетевом</div>
+За первые 14 дней я хочу получить <mark>[результат]</mark>.
 
-<section class="hero">
-  <div class="wrap">
-    <p class="eyebrow">Дорожная карта партнёра</p>
-    <h1>Зови людей в&nbsp;игру «$1000 за&nbsp;14&nbsp;дней»</h1>
-    <p class="sub">Твоя задача: пригласить людей в&nbsp;канал, привести на&nbsp;встречу и&nbsp;после неё помочь включиться. Всё по&nbsp;шагам, сообщения можно копировать.</p>
-    <div class="facts">
-      <div class="fact"><b>12 ноября, 14:00</b><span>Практика для&nbsp;партнёров, МСК</span></div>
-      <div class="fact"><b>17 ноября, 14:00</b><span>Вебинар для&nbsp;приглашённых, МСК</span></div>
-      <div class="fact"><b>14 дней</b><span>Игра и&nbsp;ежедневные отчёты</span></div>
-    </div>
-  </div>
-</section>
+Каждый день я выделяю на работу <mark>[время]</mark> и начинаю выполнять план-минимум: 10 новых личных контактов в день.</pre></div></div></section><section class="sec" id="priglashenie"><div class="wrap"><h2>1. Пригласи на нейроэкскурсию</h2><p class="d">Короткие живые переписки руками. Нейроэкскурсии проходят по вторникам и четвергам в 14:00 МСК: в скриптах вписывай ближайшую.</p><div class="grid2" style="margin-bottom:22px"><div class="box"><b>Выдохни и сыграй в игру</b><p style="margin:6px 0 0">Поставь план: минимум 5 человек на экскурсию. Получится больше, отлично. Подумай, кому написать, а кому позвонить.</p></div><div class="box"><b>Сними значимость</b><p style="margin:6px 0 0">Не решай за людей, кому интересно, а кому нет. Пиши всем.</p></div></div><div class="stop"><div class="dot">1</div><div class="body"><p class="when">Шаг 1</p><h3>Вопрос про задачу</h3><div class="msg"><div class="msg-h"><span>Первое сообщение</span><button class="copy" type="button">Скопировать</button></div><pre><mark>[Имя]</mark>, привет! Слушай, есть классная идея, сразу о тебе подумалось. Скажи, тебе сейчас актуально привлекать клиентов или партнёров в бизнес?</pre></div><p>Тем, кому ты уже писал раньше, тоже отправь это сообщение: меняется только, куда зовём.</p></div></div><div class="stop"><div class="dot">2</div><div class="body"><p class="when">Ответили «да»</p><h3>Чем занимаешься ты</h3><p>Выбери вариант под человека.</p><div class="msg"><div class="msg-h"><span>Для новичка</span><button class="copy" type="button">Скопировать</button></div><pre>Я сейчас разбираюсь в платформе с нейрокомандой, которая сама привлекает клиентов и партнёров в бизнес. Интересно узнать подробнее, как это работает?</pre></div><div class="msg"><div class="msg-h"><span>Для эксперта или предпринимателя</span><button class="copy" type="button">Скопировать</button></div><pre>Сейчас появилась новая платформа на базе нейросетей: она сама заводит диалоги, квалифицирует людей и передаёт заинтересованных во входящие сообщения. Подходит тем, кому нужен стабильный поток заявок каждый день. Интересно узнать подробнее?</pre></div></div></div><div class="stop"><div class="dot">3</div><div class="body"><p class="when">Ответили «интересно»</p><h3>Приглашение</h3><div class="msg"><div class="msg-h"><span>Сообщение</span><button class="copy" type="button">Скопировать</button></div><pre>Супер! <mark>[день]</mark> в 14:00 по Москве будет нейроэкскурсия на 30 минут. Покажу, как нейропомощники находят людей. Сможешь быть?</pre></div><div class="tip"><b>Сверь с оригиналом.</b> Полный текст приглашения есть в «Системе Масштаб», <a href="https://t.me/c/3566684243/17/18" target="_blank" rel="noopener">Шаг 1</a>.</div></div></div><div class="stop"><div class="dot">4</div><div class="body"><p class="when">Ответили «смогу»</p><h3>Отправь свою ссылку</h3><p>Отправь <b>личную ссылку на канал экскурсии</b>. По ней видно, что заявка от тебя. Ссылки ещё нет? Смотри раздел <a href="#start">«Старт»</a>.</p><div class="msg"><div class="msg-h"><span>Сообщение</span><button class="copy" type="button">Скопировать</button></div><pre>Отлично! Вот канал, там будет ссылка на встречу: <mark>[твоя ссылка на канал экскурсии]</mark>
 
-<section class="idea">
-  <div class="wrap">
-    <h2>Что мы&nbsp;делаем</h2>
-    <p>Канал <b>«Миллион долларов в&nbsp;сетевом»</b> объединяет партнёров HASH&nbsp;AI из&nbsp;разных компаний. Общая цель на&nbsp;2027 год: вместе сделать миллион долларов. Мы&nbsp;друг другу не&nbsp;конкуренты.</p>
-    <p>Первый шаг: игра <b>«$1000 за&nbsp;14&nbsp;дней»</b>. На&nbsp;вебинаре 17 ноября Анна Христюк и&nbsp;Максим Никитин покажут две связки: как продавать без блога и&nbsp;аудитории и&nbsp;как, когда база уже есть. Для участия достаточно <b>любого активного тарифа HASH&nbsp;AI</b>.</p>
-  </div>
-</section>
+Включи уведомления, чтобы не пропустить начало 😊</pre></div></div></div><div class="stop"><div class="dot">5</div><div class="body"><p class="when">За 30 минут до начала</p><h3>Напомни</h3><div class="msg"><div class="msg-h"><span>Напоминание</span><button class="copy" type="button">Скопировать</button></div><pre><mark>[Имя]</mark>, привет! Напоминаю: через полчаса, в 14:00, нейроэкскурсия. Заходи: <mark>[твоя ссылка на канал экскурсии]</mark>
 
-<section class="road">
-  <div class="wrap">
-    <h2>Маршрут</h2>
+После давай созвонимся минут на 10, и я покажу тебе, как забрать подарок 🙌</pre></div><div class="tip"><b>Подарок</b>: это участие в нашей движухе «$1000 за 14 дней», где мы бесплатно даём наши материалы по HASH AI: готовые промты и первые сообщения для Лидоруба. Это знаешь ты, человеку заранее не пишем.</div><p>Не успел отправить ссылку раньше? Отправь её в этом напоминании.</p></div></div></div></section><section class="sec" id="vo-vremya"><div class="wrap"><h2>2. Во время экскурсии</h2><p class="d">Твоё присутствие суперважно: люди видят, что пришли живые.</p><div class="box"><ul><li><b>Будь на встрече сам</b> и включи камеру.</li><li>Отмечай, кто из твоих людей пришёл: им напишешь первыми.</li><li>Отвечай в личке тем, кто пишет во время эфира: «Хочу разобраться с демодоступом», «Вы мой куратор?».</li><li>Спорные вопросы уводи в личку, чтобы не сбивать встречу.</li></ul></div><p class="sub-h">Отзыв: запиши ДО экскурсии</p><div class="box"><p style="margin:0">Кружочек на минуту или текст, отправь Анне <a href="https://t.me/nastavnikpozitiv" target="_blank" rel="noopener">@nastavnikpozitiv</a>. После экскурсии собрать уже не получится.</p><ul><li>кто ты: сетевик, фрилансер, эксперт;</li><li>что думал о нейрокоманде сначала, даже если был скептик;</li><li>что увидел и почему выбрал HASH AI;</li><li>на какой пакет зашёл и почему именно на него, если это безлимит или годовой;</li><li>если уже заработал, назови реальную сумму.</li></ul><p style="margin:8px 0 0">Говори от души, своими словами.</p></div></div></section><section class="sec" id="posle"><div class="wrap"><h2>3. После экскурсии</h2><p class="d">Сначала возьми список, потом пиши по ситуации каждого человека. Тест-драйв проходит по средам и пятницам в 14:00 МСК.</p><p class="sub-h">Кому писать в первую очередь</p><div class="box"><p style="margin:0">Список тех, кто перешёл по твоей ссылке, приходит в личку от @nastavnikpozitiv. Начни с тех, кто:</p><ul><li>перешёл в канал нейроэкскурсии;</li><li>оставил заявку на специальное предложение;</li><li>присоединился к каналу «Спецоффер на 24 часа»;</li><li>написал тебе во время или после эфира: «Хочу разобраться с демодоступом», «Вы мой куратор?» и другие вопросы;</li><li>зарегистрировался на демодоступ до или после нейроэкскурсии.</li></ul><p style="margin:10px 0 0">Ещё зайди в кабинет: <b>«Партнёрская программа» → неактивные участники</b>. Это люди, которые зарегистрировались по твоей ссылке, но ещё не активировали платный пакет. Их тоже нужно пригласить на тест-драйв.</p></div><p class="sub-h">Точно знаешь, что человек был</p><div class="msg"><div class="msg-h"><span>Сообщение участнику эфира</span><button class="copy" type="button">Скопировать</button></div><pre><mark>[Имя]</mark>, привет! Видела тебя сегодня на нейроэкскурсии 😊
 
-    <div class="stop">
-      <div class="dot">1</div>
-      <div class="body">
-        <p class="when">Сегодня</p>
-        <h3>Возьми свою ссылку на&nbsp;канал</h3>
-        <p>Напиши Максиму в&nbsp;Telegram: <b>@Nikitin_Maksim</b>. Ты&nbsp;получишь личную пригласительную ссылку. По&nbsp;ней видно, сколько людей пришло именно от&nbsp;тебя.</p>
-      </div>
-    </div>
+Отправляю тебе ссылку на регистрацию, чтобы открыть демодоступ к Hash AI на 10 дней и получить 13 100 подарочных токенов:
+<mark>[ссылка на регистрацию]</mark>
 
-    <div class="stop">
-      <div class="dot">2</div>
-      <div class="body">
-        <p class="when">Сегодня</p>
-        <h3>Составь список из&nbsp;20–30 человек</h3>
-        <ul>
-          <li>люди из&nbsp;сетевого, с&nbsp;кем ты&nbsp;уже общался</li>
-          <li>кто спрашивал про&nbsp;доход в&nbsp;интернете</li>
-          <li>партнёры, которые сейчас «стоят» и&nbsp;ищут движение</li>
-        </ul>
-      </div>
-    </div>
+Перейди по ссылке и укажи свою почту.
 
-    <div class="stop">
-      <div class="dot">3</div>
-      <div class="body">
-        <p class="when">До 17 ноября</p>
-        <h3>Напиши первое сообщение</h3>
-        <p>Выбери вариант, который звучит как&nbsp;ты. Цены в&nbsp;первом сообщении не&nbsp;называй.</p>
+Завтра, <mark>[дата]</mark> в 14:00 по Москве, проведём тест-драйв платформы: покажем, как пользоваться кабинетом, какие возможности доступны, и ответим на вопросы.
 
-        <div class="msg"><div class="msg-h"><span>Вариант 1. Знакомому</span><button class="copy" type="button">Скопировать</button></div>
-<pre>Привет! Мы с тобой общались про [тема]. Не могу тебя не позвать.
-Скажи, хочешь к Новому году заработать?
+А ещё расскажем о программе «$1000 за 14 дней» и о том, как будем работать над этой целью вместе с командой.
 
-Есть классная тема: сильные лидеры собирают движуху «$1000 за 14 дней». Во вторник, 17 ноября, в 14:00 по Москве будет встреча, там всё расскажут и можно будет присоединиться.
+Переходи в канал тест-драйва:
+<mark>[ссылка на канал тест-драйва]</mark>
 
-Интересно?</pre></div>
+Сможешь присоединиться?</pre></div><div class="tip"><b>Уже зарегистрирован?</b> Повторно регистрировать не нужно: убери блок со ссылкой на регистрацию и пригласи сразу на тест-драйв. Мужчинам: «Видела» → «Видел».</div><p class="sub-h">Не знаешь, был ли человек</p><div class="msg"><div class="msg-h"><span>Начни с вопроса</span><button class="copy" type="button">Скопировать</button></div><pre><mark>[Имя]</mark>, привет! Вижу, что ты присоединилась к каналу «Нейрокоманда, которая приводит клиентов». Удалось сегодня побыть на нейроэкскурсии?</pre></div><p>Дальше по ответу: участника эфира приглашай на тест-драйв, пропустившего на следующую нейроэкскурсию. Мужчине: «присоединился».</p><p class="sub-h">Пропустил экскурсию</p><p>Не смог прийти, получил приглашение, но не перешёл в канал, или написал после эфира, что пропустил. Отправляй свою прежнюю ссылку на канал нейроэкскурсии.</p><div class="msg"><div class="msg-h"><span>На следующую нейроэкскурсию</span><button class="copy" type="button">Скопировать</button></div><pre><mark>[Имя]</mark>, ничего страшного, что не получилось прийти! Следующая нейроэкскурсия будет <mark>[день]</mark> в 14:00 по Москве.
 
-        <div class="msg"><div class="msg-h"><span>Вариант 2. Коротко</span><button class="copy" type="button">Скопировать</button></div>
-<pre>Привет! Есть новости 🔥
-Партнёры HASH AI из разных компаний запускают игру «$1000 за 14 дней».
+Показать тебе возможности платформы и ответить на вопросы сможем на этой встрече. Получится присоединиться?
 
-Хочешь поучаствовать?</pre></div>
+Вот моя ссылка на канал:
+<mark>[ваша ссылка на канал нейроэкскурсии]</mark>
 
-        <div class="msg"><div class="msg-h"><span>Вариант 3. Через цель</span><button class="copy" type="button">Скопировать</button></div>
-<pre>Привет! Есть классные ребята, у них цель: миллион долларов в сетевом, и они запускают первую движуху «$1000 за 14 дней».
+Переходи и включи уведомления, чтобы не пропустить начало 😊</pre></div></div></section><section class="sec" id="test-drajv"><div class="wrap"><h2>4. Тест-драйв</h2><p class="d">По средам и пятницам в 14:00 МСК. Покажем кабинет, разберём демодоступ, ответим на вопросы и расскажем о программе «$1000 за 14 дней».</p><p class="sub-h">Кого звать на тест-драйв</p><div class="box"><ul style="margin:0"><li>тех, кто был на нейроэкскурсии;</li><li>тех, кто уже зарегистрировался на демодоступ;</li><li>тех, кто посмотрел видео или твой канал и сказал, что ему интересно: для них видео заменило экскурсию;</li><li>неактивных участников из «Партнёрской программы».</li></ul></div><p class="sub-h">Регистрировался раньше</p><p>Проверь прежние регистрации в «Партнёрской программе». Пригласи тех, кто не активировался, даже если демодоступ уже закончился.</p><div class="msg"><div class="msg-h"><span>Приглашение на тест-драйв</span><button class="copy" type="button">Скопировать</button></div><pre><mark>[Имя]</mark>, привет! Ты раньше регистрировалась на платформе Hash AI, и у тебя был демодоступ на 10 дней. Возможно, в тот момент не получилось спокойно разобраться.
 
-Интересно тебе такое? Могу добавить в их канал, там всё расскажут. Во вторник, 17 ноября, в 14:00 встреча.</pre></div>
-      </div>
-    </div>
+Завтра, <mark>[дата]</mark> в 14:00 по Москве, будет тест-драйв: покажем кабинет изнутри, объясним, как пользоваться платформой, и ответим на вопросы.
 
-    <div class="stop">
-      <div class="dot">4</div>
-      <div class="body">
-        <p class="when">Ответили «интересно»</p>
-        <h3>Отправь ссылку на&nbsp;канал</h3>
-        <div class="msg"><div class="msg-h"><span>Сообщение</span><button class="copy" type="button">Скопировать</button></div>
-<pre>Отлично! Заходи в канал: [твоя ссылка]
+Приходи, будет возможность разобраться вместе с нами 😊
 
-Во вторник, 17 ноября, в 14:00 там появится ссылка на встречу. Включи уведомления, чтобы не пропустить 🔔</pre></div>
-      </div>
-    </div>
+Вот ссылка на канал тест-драйва:
+<mark>[ссылка на канал тест-драйва]</mark>
 
-    <div class="stop">
-      <div class="dot">5</div>
-      <div class="body">
-        <p class="when">17 ноября, 13:00</p>
-        <h3>Напомни за&nbsp;час</h3>
-        <p>Каждому из&nbsp;твоих приглашённых, в&nbsp;личку.</p>
-        <div class="msg"><div class="msg-h"><span>Напоминание</span><button class="copy" type="button">Скопировать</button></div>
-<pre>Привет! Напоминаю: через час, в 14:00, встреча про игру «$1000 за 14 дней». Ссылка будет в канале.
+Получится присоединиться?</pre></div><p class="sub-h">Сопровождай лично</p><div class="box"><p style="margin:0">Не ограничивайся отправкой текста и ссылок. По возможности запиши короткое голосовое:</p><ul><li>объясни, какую ссылку отправил;</li><li>подскажи, как зарегистрироваться;</li><li>уточни, получилось ли войти в кабинет;</li><li>пригласи на тест-драйв и получи ответ.</li></ul><p style="margin:10px 0 0">Обращайся по имени и учитывай, что человек уже успел сделать.</p></div><p class="sub-h">После тест-драйва</p><div class="msg"><div class="msg-h"><span>Сообщение</span><button class="copy" type="button">Скопировать</button></div><pre><mark>[Имя]</mark>, привет! Видела тебя сегодня на тест-драйве 😊
 
-Будешь?</pre></div>
-      </div>
-    </div>
-
-    <div class="stop">
-      <div class="dot">6</div>
-      <div class="body">
-        <p class="when">17 ноября, 14:00</p>
-        <h3>Будь на&nbsp;встрече сам</h3>
-        <ul>
-          <li>Пиши в&nbsp;чат, поддерживай: «огонь», «я&nbsp;в&nbsp;деле», плюсы на&nbsp;вопросы ведущих.</li>
-          <li>Отмечай, кто из&nbsp;твоих людей пришёл: им&nbsp;напишешь первыми.</li>
-          <li>Споры и&nbsp;сложные вопросы уводи в&nbsp;личку, чтобы не&nbsp;сбивать энергию.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="stop">
-      <div class="dot">7</div>
-      <div class="body">
-        <p class="when">Сразу после встречи</p>
-        <h3>Напиши каждому лично</h3>
-        <div class="msg"><div class="msg-h"><span>Был на встрече</span><button class="copy" type="button">Скопировать</button></div>
-<pre>Привет! Как тебе встреча? 🙌
-
-Хочешь с нами за ближайшие 14 дней заработать первую тысячу?</pre></div>
-        <div class="msg"><div class="msg-h"><span>Не пришёл</span><button class="copy" type="button">Скопировать</button></div>
-<pre>Привет! Сегодня была встреча про игру «$1000 за 14 дней», жаль, что тебя не было.
-
-Если интересно, расскажу коротко сам. Набрать тебя на 10 минут?</pre></div>
-        <p>Кто ещё не&nbsp;знает HASH&nbsp;AI, зови на&nbsp;ближайшую презентацию компании.</p>
-      </div>
-    </div>
-
-    <div class="stop">
-      <div class="dot">8</div>
-      <div class="body">
-        <p class="when">Ответили «да»</p>
-        <h3>Регистрация и&nbsp;чат игры</h3>
-        <div class="msg"><div class="msg-h"><span>Сообщение</span><button class="copy" type="button">Скопировать</button></div>
-<pre>Супер! Вот моя ссылка на регистрацию в HASH AI: [твоя реф-ссылка]
-
-Регистрируйся, активируй любой тариф и напиши мне. Добавлю тебя в чат игры, там все условия.</pre></div>
-        <p>После активации добавь человека в&nbsp;чат «$1000 за&nbsp;14&nbsp;дней». С&nbsp;момента добавления у&nbsp;него <b>72 часа на&nbsp;подготовку и&nbsp;настройку</b>.</p>
-      </div>
-    </div>
-
-    <div class="stop">
-      <div class="dot">9</div>
-      <div class="body">
-        <p class="when">После вебинара</p>
-        <h3>Старт игры</h3>
-        <p>В&nbsp;чате игры идут ежедневные отчёты. У&nbsp;каждого нового участника 72 часа на&nbsp;подготовку с&nbsp;момента добавления.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="faq">
-  <div class="wrap">
-    <h2>Если спросят</h2>
-    <dl>
-      <div><dt>Почему канал «Миллион долларов в&nbsp;сетевом»?</dt><dd>Это общая цель партнёров на&nbsp;2027 год. Миллион складывается из&nbsp;первых тысяч, поэтому начинаем с&nbsp;$1000 за&nbsp;14&nbsp;дней.</dd></div>
-      <div><dt>Сколько стоит участие?</dt><dd>Нужен любой активный тариф HASH&nbsp;AI. Какой подойдёт именно тебе, разберём лично.</dd></div>
-      <div><dt>Я&nbsp;в&nbsp;другой компании. Это мне подходит?</dt><dd>Да. Партнёры из&nbsp;разных компаний, мы&nbsp;друг другу не&nbsp;конкуренты. HASH&nbsp;AI помогает с&nbsp;главным: где брать людей.</dd></div>
-      <div><dt>У&nbsp;меня нет блога и&nbsp;аудитории</dt><dd>Как раз об&nbsp;этом первая связка на&nbsp;встрече: как продавать без блога.</dd></div>
-    </dl>
-  </div>
-</section>
-
-<section class="rules">
-  <div class="wrap">
-    <h2>Три правила</h2>
-    <ul>
-      <li><b>Цены не&nbsp;в&nbsp;первом сообщении.</b> Сначала интерес, потом детали.</li>
-      <li><b>Каждому лично.</b> Не&nbsp;рассылка, а&nbsp;живое сообщение с&nbsp;именем.</li>
-      <li><b>Не&nbsp;обещай доход.</b> Говори «игра» и&nbsp;«цель», а&nbsp;не&nbsp;«гарантированно заработаешь».</li>
-    </ul>
-  </div>
-</section>
+Удалось разобраться с кабинетом? Какие вопросы остались и какой вариант подключения рассматриваешь?</pre></div><p>Мужчинам: «Видела» → «Видел».</p><div class="box" style="margin-top:14px"><ol style="margin:0"><li>Уточни решение человека.</li><li>Ответь на оставшиеся вопросы или напиши <a href="https://t.me/nastavnikpozitiv" target="_blank" rel="noopener">@nastavnikpozitiv</a>.</li><li>Если готов, переходи к разделу <a href="#oplata">«Оплата»</a>.</li></ol></div></div></section><section class="sec" id="molchit"><div class="wrap"><h2>5. Прочитал и молчит</h2><p class="d">Не считай молчание отказом: человек мог отвлечься. Если он прямо отказался, учитывай его ответ.</p><div class="stop"><div class="dot">1</div><div class="body"><p class="when">Через день</p><h3>Первое напоминание</h3><div class="msg"><div class="msg-h"><span>Сообщение</span><button class="copy" type="button">Скопировать</button></div><pre><mark>[Имя]</mark>, возможно, сообщение затерялось в Telegram. Поднимаю 😊</pre></div></div></div><div class="stop"><div class="dot">2</div><div class="body"><p class="when">Если ответа нет</p><h3>Второе сообщение</h3><p>Выбери один вариант.</p><div class="msg"><div class="msg-h"><span>Вариант 1</span><button class="copy" type="button">Скопировать</button></div><pre><mark>[Имя]</mark>, не люблю навязываться, поэтому просто уточню: тема сейчас актуальна? Если нет - больше писать не буду. Если актуальна, <mark>[день]</mark> в 14:00 по Москве будет следующая нейроэкскурсия. Пригласить тебя?</pre></div><div class="msg"><div class="msg-h"><span>Вариант 2</span><button class="copy" type="button">Скопировать</button></div><pre><mark>[Имя]</mark>, скажи, тебе ещё актуальна тема с клиентами и партнёрами?</pre></div><div class="msg"><div class="msg-h"><span>Если ответили «да»</span><button class="copy" type="button">Скопировать</button></div><pre>Отлично! Ближайшая нейроэкскурсия будет <mark>[день]</mark> в 14:00 по Москве. Скинуть тебе приглашение?</pre></div><p>Если человек уже был на экскурсии или смотрел видео, зови на тест-драйв.</p></div></div></div></section><section class="sec" id="oplata"><div class="wrap"><h2>6. Готов оплатить</h2><p class="d">Когда пишут: «Расскажи подробнее об условиях», «Я посмотрела презентацию и готова», «Как оплатить кабинет?», «Как мне активироваться?».</p><div class="stop"><div class="dot">1</div><div class="body"><p class="when">Сначала</p><h3>Уточни пакет</h3><div class="msg"><div class="msg-h"><span>Вопрос</span><button class="copy" type="button">Скопировать</button></div><pre>Класс, что ты заинтересовался! Скажи, ты с пакетом уже определился или нужна помощь?</pre></div><p>Женщине: «заинтересовалась», «определилась».</p></div></div><div class="stop"><div class="dot">2</div><div class="body"><p class="when">Если определился</p><h3>Проведи до активации</h3><div class="box"><ol style="margin:0"><li>Помоги зарегистрироваться, если ещё нет регистрации.</li><li>Предложи короткий созвон, где вы вместе активируете пакет.</li><li>Помоги пройти оплату и активацию выбранного пакета. Как именно, смотри в разделе <a href="#instrukciya">«Инструкция по оплате»</a>.</li><li>Обязательно пригласи на тест-драйв.</li></ol></div></div></div><div class="stop"><div class="dot">3</div><div class="body"><p class="when">Если выбирает</p><h3>От высокого пакета к низкому</h3><p><b>Безлимитный → годовой → активация за $17.</b> Если человек заинтересован в безлимитном или годовом пакете, не переводи его сам на минимальный.</p></div></div><div class="stop"><div class="dot">4</div><div class="body"><p class="when">Если спросят</p><h3>Почему ты выбрал свой пакет</h3><p>Расскажи о тех возможностях, которые ты действительно изучил и которые важны лично тебе.</p><div class="msg"><div class="msg-h"><span>Если ты на безлимите или годовом</span><button class="copy" type="button">Скопировать</button></div><pre>Я для себя выбрала безлимитный пакет. Мне откликнулось, что…
+Для моих задач важно…
+Поэтому я решила…</pre></div><div class="msg"><div class="msg-h"><span>Если ты начал с $17 и тебя прямо спросили</span><button class="copy" type="button">Скопировать</button></div><pre>Я начала с пакета за 17 долларов, потому что на момент регистрации не было ресурсов на другой вариант. В ближайшее время планирую сделать апгрейд на безлимитный.</pre></div><div class="tip">Если ты активировался за $17, не начинай разговор с этого, но на прямой вопрос отвечай честно. Не выдумывай причины, планы или результаты: говори о своём реальном опыте. Мужчинам: «выбрал», «решил», «начал».</div></div></div></div></section><section class="sec" id="instrukciya"><div class="wrap"><h2>7. Инструкция по оплате</h2><p class="d">Как помочь человеку оплатить пакет: пошаговая инструкция в «Системе Масштаб».</p><div class="box"><p style="margin:0">Открой <a href="https://t.me/c/3566684243/90/91" target="_blank" rel="noopener"><b>Шаг 5. Как помочь человеку оплатить</b></a> и пройди его вместе с человеком.</p></div><div class="tip"><b>Не получается оплатить с первого раза?</b> Чаще всего это криптокошелёк. Не мучай человека и не тяни время: сразу напиши Анне <a href="https://t.me/nastavnikpozitiv" target="_blank" rel="noopener">@nastavnikpozitiv</a>. Подключим Максима Беличенко, основателя платформы, и поможем провести оплату банковской картой.</div><div class="tip">Что отправить человеку после оплаты, появится позже отдельным шагом.</div></div></section><section class="sec" id="pochemu"><div class="wrap"><h2>Аргументы для разговора</h2><p class="d">Почему бизнес с HASH AI. Бери 1–2 пункта под задачу человека, а не все сразу.</p><div class="grid2"><div class="box"><b>Доступный старт</b><p style="margin:6px 0 0">Можно начать с месячного пакета за $17 и сразу работать с командой: система запуска, скрипты, практика и поддержка.</p></div><div class="box"><b>Понятная потребность</b><p style="margin:6px 0 0">Экспертам, предпринимателям, фрилансерам и сетевикам нужны клиенты и продажи. Лидоруб, контент-завод и инструменты коммуникации закрывают именно это.</p></div><div class="box"><b>Совмещается с основным делом</b><p style="margin:6px 0 0">Используешь платформу в своём бизнесе и параллельно рекомендуешь её. Так складывается несколько источников дохода.</p></div><div class="box"><b>Шире круг партнёров</b><p style="margin:6px 0 0">Человека из похожего бизнеса трудно позвать в свой проект, а инструменты HASH AI полезны вам обоим. Это повод для сотрудничества с лидерами других команд.</p></div><div class="box"><b>Всё в одной экосистеме</b><p style="margin:6px 0 0">Люди уже платят за ChatGPT, Claude и сервисы для контента. HASH AI собирает многие задачи в одном рабочем пространстве.</p></div><div class="box"><b>Доход с рекомендаций</b><p style="margin:6px 0 0">Партнёрская программа даёт вознаграждение с оплаченных покупок приглашённых и с развития команды. Размер зависит от квалификации и условий маркетинг-плана.</p></div></div><div class="tip"><b>Про цифры дохода.</b> Называй суммы только по актуальному маркетинг-плану и с оговоркой, что результат зависит от действий человека. Не обещай «пассивный доход» и гарантии.</div></div></section><section class="sec" id="pomoshch"><div class="wrap"><h2>Сложный вопрос</h2><p class="d">Пиши @nastavnikpozitiv: вопрос человека, условия подключения, организация встречи. Ответ в течение 24 часов в рабочие дни, во время эфиров может быть дольше. Суббота и воскресенье выходные.</p><div class="msg"><div class="msg-h"><span>Шаблон вопроса наставнику</span><button class="copy" type="button">Скопировать</button></div><pre>Кто человек: <mark>[имя, чем занимается]</mark>
+Что его интересует: <mark>[задача]</mark>
+Что уже обсудили: <mark>[коротко]</mark>
+Вопрос: <mark>[что конкретно нужно решить]</mark></pre></div></div></section><div style="padding-bottom:70px"></div>
 
 <script>
 document.querySelectorAll('.copy').forEach(function(btn){
